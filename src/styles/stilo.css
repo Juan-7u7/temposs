@@ -1,0 +1,31 @@
+:root {
+    --background: #ffe4ec;
+    --color-primario: #000000;
+    --color-secundario: #7E60BF;
+    --color-terciario: #433878;
+    --color-cuaternario: #11999E;
+    --color-letras: #000000;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--color-letras);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primario);
+}
+
+a {
+    color: var(--color-secundario);
+}
+
+button {
+    background-color: var(--color-terciario);
+    color: var(--color-letras);
+}
+
+footer {
+    background-color: var(--color-cuaternario);
+    color: var(--color-letras);
+}

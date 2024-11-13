@@ -1,0 +1,65 @@
+/* Barra lateral */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25%; /* Para escritorio */
+    background-color: #EAEAEA;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-item:hover {
+    background-color: #6A4FB5;
+    color: #fff;
+  }
+  
+  /* Chat */
+  .chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC4E1;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #333;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      max-width: 100%;
+    }
+  
+    .chat {
+      width: 100%;
+    }
+  }
+  

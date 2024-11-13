@@ -1,0 +1,224 @@
+.mensajes-container {
+    display: flex;
+    height: 100vh;
+    background-color: #FFC4E1;
+    color: #000000;
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    width: 25%;
+    background-color: #EAEAEA;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sidebar-title {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    color: #000000;
+  }
+  
+  .contact-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Previene que las imágenes se reduzcan si hay texto largo */
+  }
+  
+  .contact-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0; /* Elimina cualquier margen adicional */
+    color: #000000;
+  }
+  
+  .contact-last-message {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin: 0; /* Elimina cualquier margen adicional */
+  }
+  
+  .contact-item div {
+    display: flex;
+    flex-direction: column; /* Asegura que nombre y mensaje estén en una sola columna */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+  }
+  
+  
+  .contact-item:hover {
+    background-color: #6A4FB5;
+    color: #ffffff;
+  }
+  
+  .contact-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  }
+  
+  .contact-name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .contact-last-message {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  
+  /* Chat principal */
+  .chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC4E1;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #333333;
+  }
+  
+  .chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .chat-contact-name {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #000000;
+  }
+  
+  .chat-last-active {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message-container {
+    display: flex;
+    align-items: flex-end;
+    max-width: 70%;
+    margin-bottom: 10px;
+  }
+  
+  .message-sent {
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .message-received {
+    align-self: flex-start;
+  }
+  
+  .message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .message-sent .message-content {
+    background-color: #6A4FB5;
+    color: #ffffff;
+  }
+  
+  .message-received .message-content {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .message-text {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .message-time {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+  
+  /* Input para mensajes */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #EAEAEA;
+    border-top: 1px solid #333333;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+  }
+  
+  .send-button {
+    background-color: #6A4FB5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #F07DEA;
+  }
+  
