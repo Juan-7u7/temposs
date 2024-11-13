@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/temposs/static/css/main.002ae8c5.css",
+    "main.js": "/temposs/static/js/main.68a1d7b5.js",
+    "index.html": "/temposs/index.html",
+    "main.002ae8c5.css.map": "/temposs/static/css/main.002ae8c5.css.map",
+    "main.68a1d7b5.js.map": "/temposs/static/js/main.68a1d7b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.002ae8c5.css",
+    "static/js/main.68a1d7b5.js"
+  ]
+}
